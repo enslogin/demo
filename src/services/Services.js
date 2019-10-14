@@ -3,8 +3,7 @@ import {EventEmitter} from 'fbemitter';
 import Web3 from 'web3';
 
 import StorageService from './StorageService';
-//import ENSLoginSDK from '@enslogin/sdk';
-import ENSLoginSDK from '@enslogin/sdk/dist/ENSLoginSDK'
+import ENSLoginSDK from '@enslogin/sdk'
 
 class Services
 {
