@@ -14,8 +14,8 @@ import {
 
 import TransferModal from './TransferModal';
 
-import { Contract } from 'ethers';
-import ERC20 from 'openzeppelin-solidity/build/contracts/ERC20Detailed.json'
+// import { Contract } from 'ethers';
+// import ERC20 from 'openzeppelin-solidity/build/contracts/ERC20Detailed.json'
 
 class AssetsOverviewCard extends Component
 {
