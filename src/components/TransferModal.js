@@ -72,7 +72,7 @@ class TransferModal extends Component
 				from:  from,
 				to:    resolved,
 				value: amount,
-				data:  "",
+				data:  "0x",
 			})
 			.then ((nonce) => {
 				this.setState({ modal: false });

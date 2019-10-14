@@ -31,7 +31,7 @@ class TransactionCard extends Component
 	{
 		event.preventDefault();
 		const to    = event.target.to.value    || ethers.constants.AddressZero;
-		const data  = event.target.data.value  || '';
+		const data  = event.target.data.value  || '0x';
 		const value = event.target.value.value || '0';
 		const from  = (await this.props.services.web3.eth.getAccounts())[0];
 
