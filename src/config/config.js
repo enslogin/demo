@@ -1,9 +1,7 @@
 module.exports = {
 	provider:
 	{
-		appId:   null,
 		network: 'ropsten',
-		anchor:  null,
 	},
 	ipfs:
 	{
