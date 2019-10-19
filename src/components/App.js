@@ -26,6 +26,7 @@ class App extends Component
 				{
 					resolved: (username, addr, descr) => {
 						console.info(`Resolved ${username} (${addr}) ${descr}`);
+						this.state.emitter.emit("Notify", "info", `Connecting to ${username}`)
 						this.setState({ loading: true })
 					},
 					loading: (protocol, path) => {
@@ -42,7 +43,7 @@ class App extends Component
 	}
 
 	connect = (provider) => {
-		this.state.emitter.emit("Notify", "info", `You are connected`)
+		this.state.emitter.emit("Notify", "success", "You are connected")
 		this.setState({
 			provider,
 			web3: new Web3(provider),
@@ -51,7 +52,7 @@ class App extends Component
 	}
 
 	disconnect = () => {
-		this.state.emitter.emit("Notify", "info", `You are disconnect`)
+		this.state.emitter.emit("Notify", "warning", "You are disconnect")
 		this.setState({
 			provider: null,
 			web3: null,
@@ -64,10 +65,11 @@ class App extends Component
 				{ this.state.loading && <Loading/> }
 				<Notifications emitter={this.state.emitter}/>
 				<LoginWithEthereum
+					className = { this.state.provider ? 'connected' : '' }
 					config = { this.state.config }
 					connect = { this.connect }
 					disconnect = { this.disconnect }
-					noInjected
+					// noInjected
 				/>
 				{ this.state.provider && <Main services={this.state}/> }
 			</>

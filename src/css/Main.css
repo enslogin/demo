@@ -16,3 +16,24 @@
 {
 	margin-top: 20px;
 }
+
+
+#LoginWithEthereum
+{
+	display:          flex;
+	position:         sticky;
+	top:              0;
+	height:           100vh;
+	padding:          10px;
+	align-items:      center;
+	justify-content:  center;
+	background-color: #ffffff;
+	z-index:          100000;
+}
+
+#LoginWithEthereum.connected
+{
+	height:           auto;
+	justify-content:  right;
+	box-shadow:       0 .125rem .25rem rgba(0,0,0,.075) !important;
+}
