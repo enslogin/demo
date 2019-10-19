@@ -1,5 +1,7 @@
 body
 {
+	color: #212529;
+	background-color: #f8f9fa;
 	margin: 0;
 	padding: 0;
 	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
@@ -37,4 +39,24 @@ code
 .overflow-scrool::-webkit-scrollbar
 {
 	display: none;
+}
+
+#LoginWithEthereum
+{
+	display:          flex;
+	position:         sticky;
+	top:              0;
+	height:           100vh;
+	padding:          10px;
+	align-items:      center;
+	justify-content:  center;
+	background-color: #ffffff;
+	z-index:          100000;
+}
+
+#LoginWithEthereum.connected
+{
+	height:           auto;
+	justify-content:  right;
+	box-shadow:       0 .125rem .25rem rgba(0,0,0,.075) !important;
 }
