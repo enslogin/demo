@@ -69,7 +69,7 @@ class App extends Component
 					config = { this.state.config }
 					connect = { this.connect }
 					disconnect = { this.disconnect }
-					// noInjected
+					noInjected
 				/>
 				{ this.state.provider && <Main services={this.state}/> }
 			</>
