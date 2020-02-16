@@ -65,11 +65,12 @@ class App extends Component
 				{ this.state.loading && <Loading/> }
 				<Notifications emitter={this.state.emitter}/>
 				<LoginWithEthereum
-					className = { this.state.provider ? 'connected' : '' }
-					config = { this.state.config }
-					connect = { this.connect }
+					className  = { this.state.provider ? 'connected' : '' }
+					config     = { this.state.config }
+					connect    = { this.connect }
 					disconnect = { this.disconnect }
-					noInjected
+					noInjected = { true }
+					noCache    = { true }
 				/>
 				{ this.state.provider && <Main services={this.state}/> }
 			</>

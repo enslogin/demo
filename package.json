@@ -6,7 +6,7 @@
 	"license": "MIT",
 	"homepage": ".",
 	"dependencies": {
-		"@enslogin/login-with-ethereum": "0.0.12",
+		"@enslogin/login-with-ethereum": "^0.0.13",
 		"@fortawesome/fontawesome-svg-core": "^1.2.27",
 		"@fortawesome/free-solid-svg-icons": "^5.12.1",
 		"@fortawesome/react-fontawesome": "^0.1.8",
