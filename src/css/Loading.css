@@ -7,7 +7,7 @@
 	background-color: #23272b;
 	align-items:      center;
 	justify-content:  center;
-	z-index:          100;
+	z-index:          1000000000;
 }
 #loading .path
 {
